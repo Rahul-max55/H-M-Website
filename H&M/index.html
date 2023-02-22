@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- font link -->
+    <link href="//db.onlinewebfonts.com/c/09c8fb44d2c62d99647e4ce58736293e?family=HMSansLatin-Regular" rel="stylesheet"
+        type="text/css" />
+
+    <!-- Css link -->
+
+    <link rel="stylesheet" href="./Header.css">
+    <link rel="stylesheet" href="./Main_Footer.css">
+
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="head">
+            <div class="top_nav">
+                <div class="burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="left">
+                    <p>Customer Service</p>
+                    <p>Newsletter</p>
+                    <p>Find a store</p>
+                    <p>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    </p>
+                </div>
+                <div class="logo">
+                    <img src="https://1000logos.net/wp-content/uploads/2017/02/Hennes-Logo-19682.jpg" alt="logo_img">
+                </div>
+                <div class="right">
+                    <div class="icon_detail" onmouseover="handleOver()" onmouseout="handleOut()">
+                        <i class="fa-regular fa-user"></i>
+                        <p class="sign_p">Sign in
+                        </p>
+                        <div class="sign_in_a" id="sign_hide">
+                            <button>Sign in</button>
+                            <p class="sign_para">My account</p>
+                            <p>Membership info</p>
+                            <small>Not a member yet? join here!</small>
+
+                        </div>
+                    </div>
+                    <div class="icon_detail_search ">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="icon_detail">
+                        <i class="fa-regular fa-heart"></i>
+                        <p class="sign_p">Favourites</p>
+                    </div>
+                    <div class="icon_detail">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <p class="sign_p">Shopping bag(0)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom_nav">
+                <div class="div_for_center">
+
+                </div>
+                <nav class="navbar">
+                    <ul>
+                        <li>Ladies</li>
+                        <li>Men</li>
+                        <li>Divided</li>
+                        <li>Baby</li>
+                        <li>Kids</li>
+                        <li>H&M HOME</li>
+                        <li>Sport</li>
+                        <li>Sale</li>
+                        <li>Sustainability</li>
+                    </ul>
+                </nav>
+                <div class="search_div">
+                    <i class="fas fa-search"></i>
+                    <input type="search" name="search" id="search" placeholder="Search Products">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <ul class="notice_div">
+            <li>Member only: 10% off 1st purchase</li>
+            <li class="list_hide">Download the H&M App</li>
+
+        </ul>
+        <div class="img_div">
+            <div class="img_text">
+                <h2 class="img_text_head">Blossom like spring!</h2>
+                <h3 class="img_text_info">Welcome the season with vibrant dresses and printed tops</h3>
+                <button>Shop Now</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="top_footer">
+            <ul>
+                <h4>SHOP</h4>
+                <li>Ladies</li>
+                <li>Men</li>
+                <li>Baby</li>
+                <li>Kids</li>
+                <li>H&M HOME</li>
+                <li>Sport</li>
+                <i class="fa-solid fa-chevron-down"></i>
+            </ul>
+            <ul>
+                <h4> CORPORATE INFO</h4>
+                <li>Career at H&M</li>
+                <li>About H&M group</li>
+                <li>Sustainability</li>
+                <li>Press</li>
+                <li>Investor relations</li>
+                <li>Corporate governance</li>
+                <i class="fa-solid fa-chevron-down"></i>
+
+            </ul>
+            <ul>
+                <h4>HELP</h4>
+                <li>Customer Service</li>
+                <li>My H&M</li>
+                <li>Find a store</li>
+                <li>Legal & Privacy
+                </li>
+                <li>Contact</li>
+                <li>Report a scam</li>
+                <li>Cookie Notice</li>
+                <li>Cookie Settings</li>
+                <i class="fa-solid fa-chevron-down"></i>
+            </ul>
+            <div class="details">
+
+                <p>Sign up now and be the first to know about exclusive offers, latest fashion news & style tips!</p>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </div>
+        <div class="bottom_footer">
+            <div class="all_logo">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-pinterest"></i>
+            </div>
+            <p>The content of this site is copyright-protected and is the property of H & M Hennes & Mauritz AB. H&M’s
+                business concept is to offer fashion and quality at the best price in a sustainable way. H&M has since
+                it was founded in 1947 grown into one of the world's leading fashion companies.</p>
+            <img src="./HM_footer_img.png" id="foot_img" alt="HM">
+            <p>INDIA | Rs.</p>
+        </div>
+    </footer>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/df15767068.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b5a4c85581.js" crossorigin="anonymous">
+    </script>
+
+    <!-- Signin-Hide-Show -->
+    <script>
+        let hide = document.getElementById("sign_hide")
+        hide.style.height = "0px"
+        const handleOver = () => {
+            hide.style.height = "170px";
+        }
+        const handleOut = () => {
+            hide.style.height = "0px";
+        }
+    </script>
+</body>
+
+
+
+</html>

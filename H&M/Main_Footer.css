@@ -1,0 +1,242 @@
+main {
+    width: 90vw;
+    margin: auto;
+    padding: 10px 0px;
+}
+
+.notice_div {
+    font-size: 13px;
+    width: 90vw;
+    height: 30px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+.img_div {
+    max-width: 100vw;
+    height: 100vh;
+    background-image: url("https://image.hm.com/content/dam/TOOLBOX/inlocal/in_2022_s6/in_holi_2023/ladies-holi-2023-3x2.jpg?imwidth=657");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.img_text {
+    height: 90%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 2.5vw;
+    text-align: center;
+    color: white;
+}
+
+.img_text h2 {
+    font-size: 1.2em;
+    font-weight: 800;
+}
+
+.img_text h3 {
+    font-size: .7em;
+    font-weight: 300;
+}
+
+.img_text h2,
+h3 {
+    margin: 5px 0px;
+}
+
+.img_text button {
+    margin-top: 15px;
+    padding: 1.5% 5%;
+    font-size: .5em;
+    font-weight: 400;
+    outline: none;
+}
+
+footer {
+    max-width: 100vw;
+    min-height: 500px;
+    background-color: rgb(228, 228, 228);
+    color: rgb(34, 34, 34);
+    font-size: 13px;
+    padding: 10px;
+}
+
+.top_footer {
+    width: 80vw;
+    height: 50vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto 20%;
+    column-gap: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.top_footer ul {
+    height: 80%;
+}
+
+.top_footer ul i {
+    display: none;
+}
+
+.top_footer ul>h4 {
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.top_footer ul>li {
+    list-style: none;
+    font-size: 11px;
+    margin: 8px 0px;
+}
+
+.top_footer .details p {
+    margin: 20px 0px;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.top_footer .details {
+    width: 100%;
+    align-self: baseline;
+    margin-top: 45px;
+
+}
+
+.details .fa-solid {
+    font-weight: 600;
+}
+
+.bottom_footer {
+    width: 80vw;
+    height: 40%;
+    /* background-color: rgb(18, 169, 131); */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.bottom_footer .all_logo>* {
+    margin: 2vw;
+    font-size: 20px;
+}
+
+.bottom_footer p {
+    width: 60%;
+    text-align: center;
+}
+
+
+#foot_img {
+    width: 40px;
+
+}
+
+
+@media screen and (max-width:770px) {
+    .list_hide {
+        display: none;
+    }
+
+    .img_text h2 {
+        font-size: 1.5em;
+        margin: 1px;
+    }
+
+    .img_text h3 {
+        font-size: 1em;
+    }
+
+    .img_text button {
+        margin-top: 5px;
+        padding: 2% 7%;
+        font-size: 1em;
+        font-weight: 400;
+        outline: none;
+    }
+
+    .top_footer ul>li {
+        display: none;
+    }
+
+    .top_footer {
+        grid-template-columns: auto;
+    }
+
+    .top_footer ul i {
+        display: block;
+    }
+
+    .top_footer ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .top_footer ul h4 {
+        margin-bottom: 0px;
+    }
+
+
+
+    .top_footer .details p {
+        text-align: center;
+    }
+
+    .top_footer .details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top_footer .details i {
+        align-self: flex-end;
+        margin-left: 11px;
+    }
+
+    .bottom_footer p {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .img_div {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .img_div {
+        height: 200px;
+    }
+
+    .img_text h2 {
+        font-size: 1.7em;
+        margin: 2px;
+    }
+
+    .img_text h3 {
+        font-size: 1.2em;
+    }
+
+    .img_text button {
+        margin-top: 10;
+        padding: 2% 7%;
+        font-size: 1.3em;
+
+    }
+
+
+
+}
